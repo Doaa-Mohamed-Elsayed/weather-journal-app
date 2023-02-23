@@ -25,7 +25,7 @@ app.use(express.static('website'));
 
 // Setup Server
 const port = 3000;
-const server = app.listen(port,()=>{console.log(`running on website http://localhost:${port}`);});
+const server = app.listen(port,()=>{console.log(`running on website port http://localhost:${port}`);});
 
 //--------------Get Data------------------
 app.get('/chosenTemp', function (req, res) {

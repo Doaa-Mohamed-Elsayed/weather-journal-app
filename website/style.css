@@ -1,0 +1,163 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: #666;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns:100  */
+    height: 100%;
+    background-image: url("forecast.png");
+    color: #444;
+    grid-gap: 1em;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+#zip {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 50%;
+    height: 50%;
+}
+
+#feel {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.holder {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 10px;
+}
+.entry {
+    background: rgba(144, 156, 182, 0.4);
+    grid-area: 1 / 2 / 4 / 3;
+    color: #685206;
+    opacity: 0.8;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;}
+
+#entryHolder {
+    padding: 20px;
+}
+/*
+#date {}
+
+#temp {}
+
+#content {}
+*/
+.headline {
+    grid-area: 1 / 1 / 2 / 2;
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+
+.title {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+input {
+    display: block;
+    height: 60px;
+    width: 220px;
+    opacity: 0.8;
+    background: #c6dad9;
+    color: #f03aa7;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button {
+    background: #e3b04b !important;
+    border-color: #e3b04b !important;
+    color: #fff;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 10px 20px -6px rgba(0, 0, 0, .12);
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+button:hover {
+    border-color: #d99c22 !important;
+    background: #d99c22 !important;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+textarea {
+    background: #c6dad9;
+    opacity: 0.8;
+    color: #0d0c05;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    width: 50%;
+    height: 50%;
+}
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text*/
+::placeholder {
+    /* Firefox, Chrome, Opera */
+    color: #444;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #f0d43a;
+    font-family: 'Oswald', sans-serif;
+
+}
